@@ -1,0 +1,31 @@
+{
+    "name": "S60_QQ_MSG",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "nodemon --inspect ./test/testAll.js ",
+        "testOne": "nodemon --inspect ./test/testOne.js ",
+        "convert": "nodemon --inspect ./convert.js ",
+        "dev": "nodemon --inspect-brk ./index.js",
+        "build": "node ./index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "dayjs": "^1.8.36",
+        "iconv-lite": "^0.5.1",
+        "lodash": "^4.17.20"
+    },
+    "nodemonConfig": {
+        "ignore": [
+            "input/*",
+            "dist/*"
+        ]
+    },
+    "engines": {
+        "node": ">=16.15.1",
+        "npm": ">=8.12.2"
+    }
+}
