@@ -8,7 +8,7 @@
 
 估计由于是采用的本地时间，所以导致按时间排序后会顺序会错乱 <br/>
 时间精确到 s <br/>
-config 里面 `isFromOtherAccount` 用来颠倒 direction ， 用于是否来自于对方手机的信息处理 <br/>
+config 里面 `isFromOtherAccount` 用来颠倒 direction， 用于是否来自于对方手机的信息处理 <br/>
 
 # 使用
 
@@ -39,7 +39,7 @@ config 里面 `isFromOtherAccount` 用来颠倒 direction ， 用于是否来自
         </tr>
         <tr>
             <th>消息类型</th>
-            <th>body长度</th>
+            <th>body 长度</th>
             <th>(directionOffset)</th>
             <th>MsgBody</th>
         </tr>
@@ -60,7 +60,7 @@ config 里面 `isFromOtherAccount` 用来颠倒 direction ， 用于是否来自
         <tr>
             <td>说明</td>
             <td>消息类型</td>
-            <td>body长度</td>
+            <td>body 长度</td>
             <td>聊天时间</td>
             <td>无意义填充 6 个 0</td>
             <td>偏移量 作用未知</td>
@@ -80,7 +80,7 @@ config 里面 `isFromOtherAccount` 用来颠倒 direction ， 用于是否来自
 
 BegFlag[0] 表示数据类型（A8）, BegFlag[1]（XX） 表示 msgBody 字节数（但不一定）。 <br/>
 `./lib/type.js` --> msgType <br/>
-code 代表 A8 十进制数， alias 别称， bodyOffset 此类型 MsgBody 长度。（经验值）<br/>
+code 代表 A8 十进制数，alias 别称，bodyOffset 此类型 MsgBody 长度。（经验值）<br/>
 <br/>
 
 #### DirectionType
