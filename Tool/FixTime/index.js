@@ -12,8 +12,8 @@ for (let i = 1; i < arr.length; i++) {
 
     if (curr_msg.ms < last_msg.ms) {
         count++;
-        if (!curr_msg.$MobileQQ.s60RealTime) {
-            curr_msg.$MobileQQ.s60RealTime = `${curr_msg.day} ${curr_msg.time}`;
+        if (!curr_msg.$MobileQQ.data.s60RealTime) {
+            curr_msg.$MobileQQ.data.s60RealTime = `${curr_msg.day} ${curr_msg.time}`;
         }
 
         curr_msg.ms = last_msg.ms + 1;

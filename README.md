@@ -19,6 +19,7 @@ config 里面 `isFromOtherAccount` 用来颠倒 direction ， 用于是否来自
 4. 执行 `npm run build`
 5. `dist` 文件夹获取 数据文件
 6. `assets\data` 获取 资源文件
+7. 通过 [Shmily-Get-QQ-PC_utils](https://github.com/lqzhgood/Shmily-Get-QQ-PC_utils) 修复一些问题
 
 # 原理
 

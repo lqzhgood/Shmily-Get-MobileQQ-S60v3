@@ -17,10 +17,10 @@ fs.copySync('E:/Shmily/Tool/Show/public/data/qq-s60', './input/data/qq-s60');
     for (let j = 0; j < msgArr.length; j++) {
         const v = msgArr[j];
 
-        if (!v.$MobileQQ.fileParse) continue;
+        if (!v.$MobileQQ.data.fileParse) continue;
 
-        const f = decodeURI(v.$MobileQQ.fileParse.url);
-        const ext = v.$MobileQQ.fileParse.ext.toLowerCase();
+        const f = decodeURI(v.$MobileQQ.data.fileParse.url);
+        const ext = v.$MobileQQ.data.fileParse.ext.toLowerCase();
 
         const i = path.join(__dirname, './input/', f);
 
@@ -38,9 +38,9 @@ fs.copySync('E:/Shmily/Tool/Show/public/data/qq-s60', './input/data/qq-s60');
             await amrToMp3(i, o);
             const _f = f.replace(/amr$/i, 'mp3');
             const { ext: ext_n, base: base_n } = path.parse(_f);
-            v.$MobileQQ.fileParse.ext = ext_n;
-            v.$MobileQQ.fileParse.base = base_n;
-            v.$MobileQQ.fileParse.url = encodeURI(_f);
+            v.$MobileQQ.data.fileParse.ext = ext_n;
+            v.$MobileQQ.data.fileParse.base = base_n;
+            v.$MobileQQ.data.fileParse.url = encodeURI(_f);
             fs.moveSync(i, path.join(__dirname, './dist-amr/', f));
         }
     }

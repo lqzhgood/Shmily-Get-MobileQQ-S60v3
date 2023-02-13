@@ -78,7 +78,7 @@ function sortFixTime(arr) {
         const last_msg = arr[i - 1];
         const curr_msg = arr[i];
         if (curr_msg.ms < last_msg.ms) {
-            curr_msg.$MobileQQ.s60RealTime = `${curr_msg.day} ${curr_msg.time}`;
+            curr_msg.$MobileQQ.data.s60RealTime = `${curr_msg.day} ${curr_msg.time}`;
 
             curr_msg.ms = last_msg.ms + 1;
             curr_msg.day = dayjs(curr_msg.ms).format('YYYY-MM-DD');
