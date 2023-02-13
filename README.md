@@ -139,3 +139,11 @@ _起始字符一定是正确的_<br/>
 
 #ＮＯＫＩＡ-Ｓ６０第三版目录路径与分析（完整版）\_AppFish Studio 的专栏-CSDN 博客.mhtml#
 `https://blog.csdn.net/hyugahinat/article/details/5510219`
+
+## 感谢
+
+http://lqzhgood.github.io/Shmily/guide/other/thanks.html
+
+## 捐赠
+
+点击链接 http://lqzhgood.github.io/Shmily/guide/other/donation.html 看世界上最可爱的动物
